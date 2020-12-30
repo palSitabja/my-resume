@@ -1,0 +1,46 @@
+.card{
+    margin-top: 6vh;
+    padding: 0 5vw 0 5vw;
+}
+h1{
+    font-family: 'Lobster', cursive;
+    color: rgb(124, 124, 124);
+}
+h3{
+    font-weight: bold;
+    color: rgb(124, 124, 124);;
+}
+p,li{
+    font-family: 'Poppins', sans-serif;
+}
+/* .mat-progress-spinner circle, .mat-spinner circle {
+    stroke: #3fb53f;
+} */
+.c-spinner ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+    stroke: #03599C;
+}
+.java-spinner ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+    stroke: #F8981D;
+}
+.python-spinner ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+    stroke: #2E6C9B;
+}
+.js-spinner ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+    stroke: #EFD81D;
+}
+.angular-spinner ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+    stroke: #DD0031;
+}
+.react-spinner ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+    stroke: #61DAFB;
+}
+.spring-spinner ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+    stroke: #6DB33F;
+}
+.node-spinner ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+    stroke: #3F873E;
+}
+/* .spinner{
+    height: 4vh;
+    width: 4vh;
+} */

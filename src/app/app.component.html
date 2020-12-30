@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+  <mat-sidenav-container>
+
+    <mat-sidenav style="z-index: -1; border: none;" mode="side" opened="true">
+
+      <div (click)="changeSelected('about')" [class]="selected==='about'?'seleced-menu':'not-seleced-menu'" style="margin-top: 20vh;" class="side-menu left d-flex align-items-center">
+        <fa-icon class="side-icon"  [icon]="faUserAlt"></fa-icon>
+        <span class="sidebar-text">About</span>
+      </div>
+
+      <div (click)="changeSelected('edu')" [class]="selected==='edu'?'seleced-menu':'not-seleced-menu'" class="side-menu left d-flex align-items-center">
+        <fa-icon class="side-icon" [icon]="faGraduationCap"></fa-icon>
+        <span class="sidebar-text">Education</span>
+      </div>
+
+      <div (click)="changeSelected('skill')" [class]="selected==='skill'?'seleced-menu':'not-seleced-menu'" class="side-menu left d-flex align-items-center">
+        <fa-icon class="side-icon" [icon]="faCogs"></fa-icon>
+        <span class="sidebar-text">Skills</span>
+      </div>
+
+      <div (click)="changeSelected('experience')" [class]="selected==='experience'?'seleced-menu':'not-seleced-menu'" class="side-menu left d-flex align-items-center">
+        <fa-icon class="side-icon" [icon]="faBriefcase"></fa-icon>
+        <span class="sidebar-text">Experience</span>
+      </div>
+
+      <div (click)="changeSelected('achievement')" [class]="selected==='achievement'?'seleced-menu':'not-seleced-menu'" class="side-menu left d-flex align-items-center">
+        <fa-icon class="side-icon" [icon]="faAward"></fa-icon>
+        <span class="sidebar-text">Achievements</span>
+      </div>
+
+    </mat-sidenav>
+    <mat-sidenav-content style="background-color: #F3F2EF;">
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</body>
+</html>

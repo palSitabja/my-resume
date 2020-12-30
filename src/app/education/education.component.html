@@ -1,0 +1,55 @@
+<div class="container">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <div class="row justify-content-center">
+                <h1 class="display-2">Graduation</h1>                
+            </div>
+            <div class="row justify-content-center">
+                <p>
+                    2016-2020: B.Tech in Computer Science & Engineering from Academy of
+                    Technology, Affiliated to Maulana Abul Kalam Azad University of Technology(Formerly known as WBUT),
+                    West Bengal, India
+                </p>
+            </div>
+            <div class="row justify-content-center">
+                <div *ngFor="let sem of semMarks" class="col-md-1 col-sm-3 col-4 sem-marks-card text-center">
+                    <h3>{{sem[0]}}</h3>
+                    <p>{{sem[1]}}</p>
+                </div>
+            </div>
+            <div style="margin-top: 3vh;" class="row justify-content-center sem-marks-card text-center">
+                <h3>
+                    Degree Grade Point Average: 8.7
+                </h3>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <div class="row justify-content-center">
+                <h1 class="display-2">Higher Secondary</h1>
+            </div>
+            <div class="row justify-content-center">
+                <p>
+                    2016: Higher Secondary in Science (under WBCHSE) from Uttarpara Amarendra Vidyapith,
+                    Uttarpara, Hooghly with 84.83%
+                </p>
+            </div>
+        </div>
+    </div>
+    <div style="margin-bottom: 5vh;" class="card shadow-sm">
+        <div class="card-body">
+            <div class="row justify-content-center">
+                <h1 class="display-2">Secondary</h1>
+            </div>
+            <div class="row justify-content-center">
+                <p>
+                    2014: Madhyamik (10th standard) (under WBBSE) from Uttarpara Amarendra Vidyapith,
+                    Uttarpara, Hooghly with 88.57%                    
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

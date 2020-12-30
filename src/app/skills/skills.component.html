@@ -1,0 +1,66 @@
+<div class="container">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <div class="row justify-content-center">
+                <h1 class="display-2">Soft Skills</h1>
+            </div>
+            <div class="row">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Basics of Business Communications</li>
+                    <li class="list-group-item">Business Email Writing</li>
+                    <li class="list-group-item">Presentation Skills</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <div class="row justify-content-center">
+                <h1 class="display-2">Programming</h1>
+            </div>
+            <div class="row justify-content-center">
+                    <div *ngFor="let lang of languagesList" class="col-md-3 col-sm-6 col-6 d-flex flex-column align-items-center">
+                        <h3><i style="font-size: 20px;" class={{lang[1]}}></i>&emsp;{{lang[0]}}</h3>
+                        <div [class]='lang[3]'>
+                            <mat-progress-spinner
+                            class="mat-spinner"
+                            diameter="80"
+                            strokeWidth="10"
+                            [mode]="mode"
+                            [value]=lang[2]>
+                            </mat-progress-spinner>
+                            <div style="position:relative; top: -55px; left: 25px;">{{divByTen(lang[2])}}/10</div>
+                        </div>
+
+
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+    <div style="margin-bottom: 5vh;" class="card shadow-sm">
+        <div class="card-body">
+            <div class="row justify-content-center">
+                <h1 class="display-2">Frameworks</h1>
+            </div>
+            <div class="row justify-content-center">
+                    <div *ngFor="let frame of frameworksList" class="col-md-3 col-sm-6 col-6 d-flex flex-column align-items-center">
+                        <h3><i style="font-size: 20px;" class={{frame[1]}}></i>&emsp;{{frame[0]}}</h3>
+                        <div [class]='frame[3]'>
+                            <mat-progress-spinner
+                            class="mat-spinner"
+                            diameter="80"
+                            strokeWidth="10"
+                            [mode]="mode"
+                            [value]=frame[2]>
+                            </mat-progress-spinner>
+                            <div style="position:relative; top: -55px; left: 25px;">{{divByTen(frame[2])}}/10</div>
+                        </div>
+
+
+                    </div>
+            </div>
+        </div>
+    </div>  
+</div>

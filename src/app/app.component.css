@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,200;0,400;1,200&display=swap');
+
+mat-sidenav-container{
+    height: 100%;
+    /* width: 15%; */
+}
+mat-sidenav, mat-sidenav-content{
+    padding:0 0 0 0;
+    margin: 0;
+    
+}
+mat-sidenav{
+    background-color: #189AD3;
+    width: 16vw;
+}
+.side-menu {
+    margin-bottom: 5vh;
+}
+.side-icon{
+    margin-right: 20px;
+}
+.left {
+    border-bottom-left-radius: 90px;
+    border-top-left-radius: 90px;
+    background-color: #189AD3;
+    height: 6vh;
+    padding: 0 2vw 0 2vw;
+    margin-left: 2vw;
+    color: #F3F2EF;
+  }
+  .seleced-menu{
+      background-color: #F3F2EF;
+      color:  #189AD3;
+  }
+  .not-seleced-menu{
+    background-color:  #189AD3;
+}
+.left:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    mat-sidenav{
+        /* background-color: #189AD3; */
+        width: 13vw;
+        border: none;
+    }
+    .side-icon{
+        margin-right: 5px;
+    }
+    .sidebar-text{
+        display: none;
+    }
+  }
