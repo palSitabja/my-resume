@@ -1,1 +1,30 @@
-<p>achievement works!</p>
+<div class="container mb-5">
+    <div class="card shadow-sm mt-5">
+        <div class="card-body">
+            <div class="row justify-content-center mb-3" >
+                <h1 style="border-bottom:solid 6px grey;" class="m-0 heading">Badges</h1>
+            </div>
+            <div class="row">
+                <div *ngFor="let badge of badges" class="col-md-3 col-6">
+                    <a target="_blank" [href]="badge[1]"><img style="border: none;" [src]="badge[0]" class="img-thumbnail" alt="..."></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card shadow-sm mt-5">
+        <div class="card-body">
+            <div class="row justify-content-center mb-3" >
+                <h1 style="border-bottom:solid 6px grey;" class="m-0 heading">Certificates</h1>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li *ngFor="let certificate of certifications" class="list-group-item">
+                    <div class="col">
+                        <a target="_blank" [href]="certificate.url"><h2 class="text-color">{{certificate.name}}</h2></a>
+                        <p class="text-color">{{certificate.company}} | {{certificate.time}}</p>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>

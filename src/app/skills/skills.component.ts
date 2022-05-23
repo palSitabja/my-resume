@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faLeaf } from "@fortawesome/free-solid-svg-icons";
+import { SkillService } from './skill.service';
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
@@ -9,25 +10,25 @@ export class SkillsComponent implements OnInit {
 
   color="green"
   mode="determinate"
-  
-  languagesList=[
-    ['C','devicon-c-plain colored','90','c-spinner'],
-    ['JAVA','devicon-java-plain colored','90','java-spinner'],
-    ['Python3','devicon-python-plain colored','80','python-spinner'],
-    ['JS','devicon-javascript-plain colored','80','js-spinner']
-
-  ]
-  frameworksList=[
-    ['Angular','devicon-angularjs-plain colored','80','angular-spinner'],
-    ['React','devicon-react-original colored','80','react-spinner'],
-    ['Spring','','80','spring-spinner'],
-    ['Node','devicon-nodejs-plain colored','70','node-spinner']
-
-  ]
-
-  constructor() { }
+  skilldata:any=[]
+  error:any
+  languagesList:any=[]
+  frameworksList:any=[]
+  dbList:any=[]
+  tools:any=[]
+  constructor(private skillService:SkillService) { }
 
   ngOnInit(): void {
+    this.skillService.getData().subscribe(
+      data=>{
+        this.skilldata=data
+        this.languagesList=data[1].Programming
+        this.frameworksList=data[2].Frameworks
+        this.dbList=data[3].db
+        this.tools=data[4].tool
+      },
+      error=>this.error=error
+    )
   }
   divByTen(num){
     return num/10

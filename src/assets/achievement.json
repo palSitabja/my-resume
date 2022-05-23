@@ -1,0 +1,47 @@
+{
+    "heading":"Achievement",
+    "badges":[
+        ["../../assets/awscp.png","https://www.credly.com/badges/4ae39dd9-6410-485a-8faa-fd91cc0dd8c0"],
+        ["../../assets/image.png","https://www.credly.com/badges/e750ba31-804d-4f7d-b80f-dd55bd9ae0d9"],
+        ["../../assets/MTA-Introduction_to_Programming_Using_Python-600x600.png","https://www.credly.com/badges/bbacc2bb-5d4b-4620-a94c-63ebf9912dd5"],
+        ["../../assets/m001.png","https://university.mongodb.com/course_completion/34738e14-ebf6-4c22-ba66-baedb6644652"]
+    ],
+    "certificates":[
+        {
+            "name":"AWS Certified Cloud Practitioner",
+            "company":"AWS",
+            "time":"2022",
+            "url":"https://www.credly.com/badges/4ae39dd9-6410-485a-8faa-fd91cc0dd8c0"
+        },
+        {
+            "name":"Microsoft Certified: Azure Fundamentals",
+            "company":"Microsoft",
+            "time":"2021",
+            "url":"https://www.credly.com/badges/e750ba31-804d-4f7d-b80f-dd55bd9ae0d9"
+        },
+        {
+            "name":"Introduction to Programming Using Python",
+            "company":"Microsoft",
+            "time":"2021",
+            "url":"https://www.credly.com/badges/bbacc2bb-5d4b-4620-a94c-63ebf9912dd5"
+        },
+        {
+            "name":"Angular Certificate",
+            "company":"Hacker Rank",
+            "time":"2021",
+            "url":"https://www.hackerrank.com/certificates/631e77213b31"
+        },
+        {
+            "name":"M001: MongoDB Basics",
+            "company":"MongoDB University",
+            "time":"2020",
+            "url":"https://university.mongodb.com/course_completion/34738e14-ebf6-4c22-ba66-baedb6644652"
+        },
+        {
+            "name":"Introduction to Data Science in Python",
+            "company":"Coursera",
+            "time":"2019",
+            "url":"https://www.coursera.org/account/accomplishments/verify/FBB7Q5VP8SBB"
+        }
+    ]
+}

@@ -35,6 +35,7 @@ export class AppComponent implements OnInit{
   //          });
     
   // }
+    this.router.navigate([''])
   
   }
   changeSelected(current){

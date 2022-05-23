@@ -13,7 +13,7 @@ const routes: Routes = [
   {path:'skill',component:SkillsComponent},
   {path:'experience',component:ExperienceComponent},
   {path:'achievement',component:AchievementComponent},
-  { path: '**', redirectTo: 'about' }
+  {path: '**', redirectTo: 'about' }
 ];
 
 @NgModule({

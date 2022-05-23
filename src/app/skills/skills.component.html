@@ -1,23 +1,8 @@
-<div class="container">
+<div class="container mb-5">
     <div class="card shadow-sm">
         <div class="card-body">
             <div class="row justify-content-center">
-                <h1 class="display-2">Soft Skills</h1>
-            </div>
-            <div class="row">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Basics of Business Communications</li>
-                    <li class="list-group-item">Business Email Writing</li>
-                    <li class="list-group-item">Presentation Skills</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    
-    <div class="card shadow-sm">
-        <div class="card-body">
-            <div class="row justify-content-center">
-                <h1 class="display-2">Programming</h1>
+                <h1 style="border-bottom:solid 6px grey;" class="display-2">{{skilldata[1].heading}}</h1>
             </div>
             <div class="row justify-content-center">
                     <div *ngFor="let lang of languagesList" class="col-md-3 col-sm-6 col-6 d-flex flex-column align-items-center">
@@ -42,7 +27,7 @@
     <div style="margin-bottom: 5vh;" class="card shadow-sm">
         <div class="card-body">
             <div class="row justify-content-center">
-                <h1 class="display-2">Frameworks</h1>
+                <h1 style="border-bottom:solid 6px grey;" class="display-2">{{skilldata[2].heading}}</h1>
             </div>
             <div class="row justify-content-center">
                     <div *ngFor="let frame of frameworksList" class="col-md-3 col-sm-6 col-6 d-flex flex-column align-items-center">
@@ -62,5 +47,67 @@
                     </div>
             </div>
         </div>
+    </div>
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <div class="row justify-content-center">
+                <h1 style="border-bottom:solid 6px grey;" class="display-2">{{skilldata[3].heading}}</h1>
+            </div>
+            <div class="row justify-content-center">
+                    <div *ngFor="let dbl of dbList" class="col-md-3 col-sm-6 col-6 d-flex flex-column align-items-center">
+                        <h3><i style="font-size: 20px;" class={{dbl[1]}}></i>&emsp;{{dbl[0]}}</h3>
+                        <div [class]='dbl[3]'>
+                            <mat-progress-spinner
+                            class="mat-spinner"
+                            diameter="80"
+                            strokeWidth="10"
+                            [mode]="mode"
+                            [value]=dbl[2]>
+                            </mat-progress-spinner>
+                            <div style="position:relative; top: -55px; left: 25px;">{{divByTen(dbl[2])}}/10</div>
+                        </div>
+
+
+                    </div>
+            </div>
+        </div>
     </div>  
+    <div style="margin-bottom: 5vh;" class="card shadow-sm">
+        <div class="card-body">
+            <div class="row justify-content-center">
+                <h1 style="border-bottom:solid 6px grey;" class="display-2">{{skilldata[4].heading}}</h1>
+            </div>
+            <div class="row justify-content-center">
+                    <div *ngFor="let tool of tools" class="col-md-3 col-sm-6 col-6 d-flex flex-column align-items-center">
+                        <h3><i style="font-size: 20px;" class={{tool[1]}}></i>&emsp;{{tool[0]}}</h3>
+                        <div [class]='tool[3]'>
+                            <mat-progress-spinner
+                            class="mat-spinner"
+                            diameter="80"
+                            strokeWidth="10"
+                            [mode]="mode"
+                            [value]=tool[2]>
+                            </mat-progress-spinner>
+                            <div style="position:relative; top: -55px; left: 25px;">{{divByTen(tool[2])}}/10</div>
+                        </div>
+
+
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <div class="row justify-content-center">
+                <h1 style="border-bottom:solid 6px grey;" class="display-2">{{skilldata[0].heading}}</h1>
+            </div>
+            <div class="row">
+                <ul class="list-group list-group-flush">
+                    <li *ngFor="let sk of skilldata[0].SoftSkills" class="list-group-item">
+                        <p>{{sk}}</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>

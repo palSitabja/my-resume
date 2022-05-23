@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AchievementService } from './achievement.service';
 
 @Component({
   selector: 'app-achievement',
@@ -6,10 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./achievement.component.css']
 })
 export class AchievementComponent implements OnInit {
-
-  constructor() { }
+  data:any
+  badges:any=[]
+  certifications:any=[]
+  error:any
+  constructor(private achievementService:AchievementService) { }
 
   ngOnInit(): void {
+    this.achievementService.getData().subscribe(
+      data=>{
+        this.data=data
+        this.badges=data.badges
+        this.certifications=data.certificates
+      },
+      error=>this.error=error
+    )
   }
 
 }

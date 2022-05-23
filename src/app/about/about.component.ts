@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faFacebookSquare,faGithubSquare,faLinkedin,faWhatsappSquare } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope,faDownload } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-about',
@@ -13,6 +13,7 @@ export class AboutComponent implements OnInit {
   faLinkedin=faLinkedin
   faEnvelope=faEnvelope
   faWhatsappSquare=faWhatsappSquare
+  faDownload=faDownload
   constructor() { }
 
   ngOnInit(): void {

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EducationService } from './education.service';
 
 @Component({
   selector: 'app-education',
@@ -6,19 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./education.component.css']
 })
 export class EducationComponent implements OnInit {
-  semMarks=[
-    ['Sem-8','10.00'],
-    ['Sem-7','8.81'],
-    ['Sem-6','8.73'],
-    ['Sem-5','8.85'],
-    ['Sem-4','8.85'],
-    ['Sem-3','8.21'],
-    ['Sem-2','8.31'],
-    ['Sem-1','8.26'],
-  ]
-  constructor() { }
+  eduData:any=[]
+  error:any
+  constructor(private eduService:EducationService) { }
 
   ngOnInit(): void {
+    this.eduService.getData().subscribe(
+      data=>{
+        this.eduData=data,
+        console.log(data);  
+      },
+      error=>this.error=error
+    )
   }
 
 }

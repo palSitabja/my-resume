@@ -1,0 +1,29 @@
+[
+    {
+        "heading":"Graduation",
+        "description":"2016-2020: B.Tech in Computer Science & Engineering from Academy of Technology, Affiliated to Maulana Abul Kalam Azad University of Technology(Formerly known as WBUT), West Bengal, India",
+        "marks":
+        [
+            ["Sem-1","8.26"],
+            ["Sem-2","8.31"],
+            ["Sem-3","8.21"],
+            ["Sem-4","8.85"],
+            ["Sem-5","8.85"],
+            ["Sem-6","8.73"],
+            ["Sem-7","8.81"],
+            ["Sem-8","10.00"]
+        ],
+        "dgpa":"8.7"
+    },
+    {
+        "heading":"Higher Secondary",
+        "description":"2016: Higher Secondary in Science (under WBCHSE) from Uttarpara Amarendra Vidyapith, Uttarpara, Hooghly",
+        "marks":"84.83%"
+    },
+    {
+        "heading":"Secondary",
+        "description":"2014: Madhyamik (10th standard) (under WBBSE) from Uttarpara Amarendra Vidyapith, Uttarpara, Hooghly",
+        "marks":"88.57%"
+    }
+]
+

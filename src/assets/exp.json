@@ -1,0 +1,29 @@
+{
+    "heading":"Experience",
+    "experiences":[
+        {
+            "Designation":"Specialist Programmer",
+            "Company":"Infosys",
+            "Time":"Jan 2022 - Till now",
+            "work":[
+                "TBD"
+            ],
+            "Tech_Stack":"",
+            "Recognition":""
+        },
+        {
+            "Designation":"Digital Specialist Engineer",
+            "Company":"Infosys",
+            "Time":"Sep 2020 - Dec 2021",
+            "work":[
+                "Worked as an end to end test automation tool/suite developer",
+                "Recognising manual efforts that can be automated",
+                "Developing the automation solution and present to our client",
+                "Developed UI for an automation solution"
+            ],
+            "Tech_Stack":"Java, Angular, Selenium, Rest Assured, Java Message Service API, HTML, CSS, Bootstrap",
+            "Recognition":"Received multiple appreciation and recognition from our client for my efforts"
+        }
+
+    ]
+}

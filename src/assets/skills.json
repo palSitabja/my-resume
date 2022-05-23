@@ -1,0 +1,44 @@
+[
+    {
+        "heading":"Soft Skills",
+        "SoftSkills":["Basics of Business Communications","Business Email Writing","Presentation Skills"] 
+    },
+    {
+        "heading":"Programming",
+        "Programming":
+        [
+            ["C","devicon-c-plain-wordmark colored","70","c-spinner"],
+            ["JAVA","devicon-java-plain colored","80","java-spinner"],
+            ["Python3","devicon-python-plain colored","80","python-spinner"],
+            ["JS","devicon-javascript-plain colored","70","js-spinner"]
+          ]
+    },
+    {
+        "heading":"Frameworks",
+        "Frameworks":
+        [
+            ["Angular","devicon-angularjs-plain colored","80","angular-spinner"],
+            ["React","devicon-react-plain colored","70","react-spinner"],
+            ["Spring","devicon-spring-plain colored","80","spring-spinner"],
+            ["Node","devicon-nodejs-plain colored","60","node-spinner"]
+          ]
+    },
+    {
+        "heading":"Databases",
+        "db":
+        [
+            ["MySQL","devicon-mysql-plain colored","70","python-spinner"],
+            ["Mongo","devicon-mongodb-plain colored","60","spring-spinner"]
+          ]
+    },
+    {
+        "heading":"DevOps and Tools",
+        "tool":
+        [
+            ["Git","devicon-git-plain colored","70","angular-spinner"],
+            ["Jenkins","devicon-jenkins-plain colored","50","java-spinner"],
+            ["Docker","devicon-docker-plain colored","50","react-spinner"],
+            ["Postman","","70","js-spinner"]
+          ]
+    }
+]

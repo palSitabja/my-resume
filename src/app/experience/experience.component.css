@@ -1,0 +1,29 @@
+h1{
+    font-family: 'Lobster', cursive;
+    color: rgb(124, 124, 124);
+}
+h3{
+    font-weight: bold;
+    color: rgb(124, 124, 124);;
+}
+p{
+    font-family: 'Lobster', cursive;
+    color: rgb(124, 124, 124);
+}
+li{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(124, 124, 124);
+    font-weight: bold;
+}
+ul{
+    margin: 0px;
+}
+.sem-marks-card{
+    /* border: 1px solid black; */
+    border-left: 2px solid rgba(243,242,239,1);
+    border-top: 2px solid rgba(243,242,239,1);
+    margin: 1vh 1vw 0 1vh;
+    -webkit-box-shadow: 6px 6px 3px 0px rgba(243,242,239,1);
+-moz-box-shadow: 6px 6px 3px 0px rgba(243,242,239,1);
+box-shadow: 6px 6px 3px 0px rgba(243,242,239,1);
+}

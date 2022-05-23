@@ -12,6 +12,9 @@ h3{
 }
 p,li{
     font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: rgb(124, 124, 124);
+    margin: 0px;
 }
 /* .mat-progress-spinner circle, .mat-spinner circle {
     stroke: #3fb53f;
