@@ -12,20 +12,12 @@ export class SkillsComponent implements OnInit {
   mode="determinate"
   skilldata:any=[]
   error:any
-  languagesList:any=[]
-  frameworksList:any=[]
-  dbList:any=[]
-  tools:any=[]
   constructor(private skillService:SkillService) { }
 
   ngOnInit(): void {
     this.skillService.getData().subscribe(
       data=>{
         this.skilldata=data
-        this.languagesList=data[1].Programming
-        this.frameworksList=data[2].Frameworks
-        this.dbList=data[3].db
-        this.tools=data[4].tool
       },
       error=>this.error=error
     )

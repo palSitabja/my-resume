@@ -1,21 +1,21 @@
 <div class="container mb-5">
-    <div class="card shadow-sm">
+    <div *ngFor="let skill of skilldata" class="card shadow-sm">
         <div class="card-body">
             <div class="row justify-content-center">
-                <h1 style="border-bottom:solid 6px grey;" class="display-2">{{skilldata[1].heading}}</h1>
+                <h1 style="border-bottom:solid 6px grey;" class="display-2">{{skill.heading}}</h1>
             </div>
             <div class="row justify-content-center">
-                    <div *ngFor="let lang of languagesList" class="col-md-3 col-sm-6 col-6 d-flex flex-column align-items-center">
-                        <h3><i style="font-size: 20px;" class={{lang[1]}}></i>&emsp;{{lang[0]}}</h3>
-                        <div [class]='lang[3]'>
+                    <div *ngFor="let detail of skill.details" class="col-md-3 col-sm-6 col-6 d-flex flex-column align-items-center">
+                        <h3><i style="font-size: 20px;" class={{detail[1]}}></i>&emsp;{{detail[0]}}</h3>
+                        <div [class]='detail[3]'>
                             <mat-progress-spinner
                             class="mat-spinner"
                             diameter="80"
                             strokeWidth="10"
                             [mode]="mode"
-                            [value]=lang[2]>
+                            [value]=detail[2]>
                             </mat-progress-spinner>
-                            <div style="position:relative; top: -55px; left: 25px;">{{divByTen(lang[2])}}/10</div>
+                            <div style="position:relative; top: -55px; left: 25px;">{{divByTen(detail[2])}}/10</div>
                         </div>
 
 
@@ -24,7 +24,7 @@
         </div>
     </div>
     
-    <div style="margin-bottom: 5vh;" class="card shadow-sm">
+    <!-- <div style="margin-bottom: 5vh;" class="card shadow-sm">
         <div class="card-body">
             <div class="row justify-content-center">
                 <h1 style="border-bottom:solid 6px grey;" class="display-2">{{skilldata[2].heading}}</h1>
@@ -95,19 +95,5 @@
                     </div>
             </div>
         </div>
-    </div>
-    <div class="card shadow-sm">
-        <div class="card-body">
-            <div class="row justify-content-center">
-                <h1 style="border-bottom:solid 6px grey;" class="display-2">{{skilldata[0].heading}}</h1>
-            </div>
-            <div class="row">
-                <ul class="list-group list-group-flush">
-                    <li *ngFor="let sk of skilldata[0].SoftSkills" class="list-group-item">
-                        <p>{{sk}}</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    </div> -->
 </div>

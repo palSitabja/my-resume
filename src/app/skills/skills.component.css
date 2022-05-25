@@ -43,6 +43,15 @@ p,li{
 .node-spinner ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
     stroke: #3F873E;
 }
+.express-spinner ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+    stroke: rgb(65, 62, 62);
+}
+.html-spinner ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+    stroke: #DD4B25;
+}
+.bs-spinner ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+    stroke: #7F0FF3;
+}
 /* .spinner{
     height: 4vh;
     width: 4vh;

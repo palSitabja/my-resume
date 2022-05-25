@@ -1,11 +1,7 @@
 [
     {
-        "heading":"Soft Skills",
-        "SoftSkills":["Basics of Business Communications","Business Email Writing","Presentation Skills"] 
-    },
-    {
         "heading":"Programming",
-        "Programming":
+        "details":
         [
             ["C","devicon-c-plain-wordmark colored","70","c-spinner"],
             ["JAVA","devicon-java-plain colored","80","java-spinner"],
@@ -14,18 +10,28 @@
           ]
     },
     {
-        "heading":"Frameworks",
-        "Frameworks":
+        "heading":"Backend",
+        "details":
+        [
+            ["Spring","devicon-spring-plain colored","80","spring-spinner"],
+            ["Node","devicon-nodejs-plain colored","50","node-spinner"],
+            ["Express","devicon-express-original","50","express-spinner"]
+          ]
+    },
+    {
+        "heading":"Frontend",
+        "details":
         [
             ["Angular","devicon-angularjs-plain colored","80","angular-spinner"],
             ["React","devicon-react-plain colored","70","react-spinner"],
-            ["Spring","devicon-spring-plain colored","80","spring-spinner"],
-            ["Node","devicon-nodejs-plain colored","60","node-spinner"]
+            ["HTML","devicon-html5-plain colored","80","html-spinner"],
+            ["CSS","devicon-css3-plain colored","70","c-spinner"],
+            ["Bootstrap","devicon-bootstrap-plain colored","80","bs-spinner"]
           ]
     },
     {
         "heading":"Databases",
-        "db":
+        "details":
         [
             ["MySQL","devicon-mysql-plain colored","70","python-spinner"],
             ["Mongo","devicon-mongodb-plain colored","60","spring-spinner"]
@@ -33,7 +39,7 @@
     },
     {
         "heading":"DevOps and Tools",
-        "tool":
+        "details":
         [
             ["Git","devicon-git-plain colored","70","angular-spinner"],
             ["Jenkins","devicon-jenkins-plain colored","50","java-spinner"],
