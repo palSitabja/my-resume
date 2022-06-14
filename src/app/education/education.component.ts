@@ -7,7 +7,7 @@ import { EducationService } from './education.service';
   styleUrls: ['./education.component.css']
 })
 export class EducationComponent implements OnInit {
-  eduData:any=[]
+  eduData:any=null
   error:any
   constructor(private eduService:EducationService) { }
 

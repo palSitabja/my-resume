@@ -10,7 +10,7 @@ export class SkillsComponent implements OnInit {
 
   color="green"
   mode="determinate"
-  skilldata:any=[]
+  skilldata:any=null
   error:any
   constructor(private skillService:SkillService) { }
 

@@ -7,7 +7,7 @@ import { ExperienceService } from './experience.service';
   styleUrls: ['./experience.component.css']
 })
 export class ExperienceComponent implements OnInit {
-  expData:any
+  expData:any=null
   experiences:any=[]
   error:any
   constructor(private expService:ExperienceService) {}

@@ -27,3 +27,25 @@ ul{
 -moz-box-shadow: 6px 6px 3px 0px rgba(243,242,239,1);
 box-shadow: 6px 6px 3px 0px rgba(243,242,239,1);
 }
+.spinner-border{
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: text-bottom;
+    border: 0.5em solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: spinner-border .75s linear infinite;
+}
+
+@keyframes loading {
+    0% {color: #F3F2EF;}
+    100% {color: #17A2B8;}
+  }
+.load-animation {
+    color: #F3F2EF;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }

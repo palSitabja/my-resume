@@ -1,4 +1,10 @@
-<div class="container mb-5">
+<div *ngIf="expData==null" class="text-center" style="margin-top: 40vh;margin-bottom: 30vh;">
+    <div class="spinner-border text-info" style="width: 4rem;height: 4rem;">
+        
+    </div>
+    <div class="mt-2 load-animation" style="font-size: large;font-weight: bolder;animation-name: loading;">Loading...</div>
+</div>
+<div *ngIf="expData!==null" class="container mb-5">
     <div *ngFor="let exp of experiences" class="card shadow-sm mt-5">
         <div class="card-body">
             <div class="">

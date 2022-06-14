@@ -7,7 +7,7 @@ import { AchievementService } from './achievement.service';
   styleUrls: ['./achievement.component.css']
 })
 export class AchievementComponent implements OnInit {
-  data:any
+  data:any=null
   badges:any=[]
   certifications:any=[]
   error:any

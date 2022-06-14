@@ -1,4 +1,10 @@
-<div class="container mb-5">
+<div *ngIf="skilldata==null" class="text-center" style="margin-top: 40vh;margin-bottom: 30vh;">
+    <div class="spinner-border text-info" style="width: 4rem;height: 4rem;">
+        
+    </div>
+    <div class="mt-2 load-animation" style="font-size: large;font-weight: bolder;animation-name: loading;">Loading...</div>
+</div>
+<div *ngIf="skilldata!==null" class="container mb-5">
     <div *ngFor="let skill of skilldata" class="card shadow-sm">
         <div class="card-body">
             <div class="row justify-content-center">
@@ -15,85 +21,12 @@
                             [mode]="mode"
                             [value]=detail[2]>
                             </mat-progress-spinner>
-                            <div style="position:relative; top: -55px; left: 25px;">{{divByTen(detail[2])}}/10</div>
+                            <div style="position:relative; top: -52px; left: 25px;">
+                                <p style="color: gray;font-weight: bolder;">{{divByTen(detail[2])}}/10</p>
+                            </div>
                         </div>
-
-
                     </div>
             </div>
         </div>
     </div>
-    
-    <!-- <div style="margin-bottom: 5vh;" class="card shadow-sm">
-        <div class="card-body">
-            <div class="row justify-content-center">
-                <h1 style="border-bottom:solid 6px grey;" class="display-2">{{skilldata[2].heading}}</h1>
-            </div>
-            <div class="row justify-content-center">
-                    <div *ngFor="let frame of frameworksList" class="col-md-3 col-sm-6 col-6 d-flex flex-column align-items-center">
-                        <h3><i style="font-size: 20px;" class={{frame[1]}}></i>&emsp;{{frame[0]}}</h3>
-                        <div [class]='frame[3]'>
-                            <mat-progress-spinner
-                            class="mat-spinner"
-                            diameter="80"
-                            strokeWidth="10"
-                            [mode]="mode"
-                            [value]=frame[2]>
-                            </mat-progress-spinner>
-                            <div style="position:relative; top: -55px; left: 25px;">{{divByTen(frame[2])}}/10</div>
-                        </div>
-
-
-                    </div>
-            </div>
-        </div>
-    </div>
-    <div class="card shadow-sm">
-        <div class="card-body">
-            <div class="row justify-content-center">
-                <h1 style="border-bottom:solid 6px grey;" class="display-2">{{skilldata[3].heading}}</h1>
-            </div>
-            <div class="row justify-content-center">
-                    <div *ngFor="let dbl of dbList" class="col-md-3 col-sm-6 col-6 d-flex flex-column align-items-center">
-                        <h3><i style="font-size: 20px;" class={{dbl[1]}}></i>&emsp;{{dbl[0]}}</h3>
-                        <div [class]='dbl[3]'>
-                            <mat-progress-spinner
-                            class="mat-spinner"
-                            diameter="80"
-                            strokeWidth="10"
-                            [mode]="mode"
-                            [value]=dbl[2]>
-                            </mat-progress-spinner>
-                            <div style="position:relative; top: -55px; left: 25px;">{{divByTen(dbl[2])}}/10</div>
-                        </div>
-
-
-                    </div>
-            </div>
-        </div>
-    </div>  
-    <div style="margin-bottom: 5vh;" class="card shadow-sm">
-        <div class="card-body">
-            <div class="row justify-content-center">
-                <h1 style="border-bottom:solid 6px grey;" class="display-2">{{skilldata[4].heading}}</h1>
-            </div>
-            <div class="row justify-content-center">
-                    <div *ngFor="let tool of tools" class="col-md-3 col-sm-6 col-6 d-flex flex-column align-items-center">
-                        <h3><i style="font-size: 20px;" class={{tool[1]}}></i>&emsp;{{tool[0]}}</h3>
-                        <div [class]='tool[3]'>
-                            <mat-progress-spinner
-                            class="mat-spinner"
-                            diameter="80"
-                            strokeWidth="10"
-                            [mode]="mode"
-                            [value]=tool[2]>
-                            </mat-progress-spinner>
-                            <div style="position:relative; top: -55px; left: 25px;">{{divByTen(tool[2])}}/10</div>
-                        </div>
-
-
-                    </div>
-            </div>
-        </div>
-    </div> -->
 </div>
